@@ -1,16 +1,74 @@
 .slider__section {
+
     overflow: hidden;
     margin-bottom: -6px;
-    outline: none;
+
     .slick-dots{
-       bottom: 10px;
+       bottom: 25px;
+    .slick-active {
+           background-color: $primary-color;
+           z-index: 100;
+       }
        li {
-          button:before {
-            font-size: 8px;
-            opacity: 1;
-            color: $secondary-color;
+          display: flex;
+          justify-content: space-around;
+          width: 200px;
+          height: 2.5px;
+          background-color: #c9c9c9;
+          border-radius: 6px;
+          position: relative;
+          &:first-child:hover {
+             &::after {
+                 content: "Galaxy S21 ultra 5g";
+                 display: block;
+                 font-weight: 600;
+                 text-transform: uppercase;
+                 position: absolute;
+                 top: -30px;
+                 left: 0;
+                 right: 0;
+                 margin: 0 auto;
+                 color: $text-color-secondary;
+             }
+          }
+          &:nth-child(2):hover {
+             &::after {
+                 content: "Precomanda neo qled";
+                 display: block;
+                 font-weight: 600;
+                 text-transform: uppercase;
+                 position: absolute;
+                 top: -30px;
+                 left: 0;
+                 right: 0;
+                 margin: 0 auto;
+                 color: $text-color-secondary;
+             }
+          }
+          &:nth-child(3):hover {
+             &::after {
+                 content: "QuickDrive";
+                 display: block;
+                 font-weight: 600;
+                 position: absolute;
+                 top: -30px;
+                 left: 0;
+                 right: 0;
+                 margin: 0 auto;
+                 color: $text-color-secondary;
+             }
           }
        }
+    }
+}
+
+.slider__box {
+    outline: unset;
+    position: relative;
+    img {
+        overflow: hidden;
+        width: 99.5%;
+        margin: 0 auto;
     }
 }
 
@@ -24,6 +82,7 @@
         height: 40px !important;
         border-radius: 50%;
         background-color: $secondary-color !important;
+        transition: 0.2s ease-in-out;
     
         &:hover {
             background-color: $primary-color !important;
@@ -67,13 +126,6 @@
     }
 }
 
-// .slick-arrow {
-//      @media screen and(min-width: 1024px) {
-        
-//         display: none;
-//     }
-// }
-
 .slick-next {
 
     @media  screen and(min-width: 1024px) {
@@ -85,6 +137,7 @@
         height: 40px !important;
         border-radius: 50%;
         background-color: $secondary-color !important;
+        transition: 0.2s ease-in-out;
 
         &:hover {
             background-color: $primary-color !important;
@@ -133,23 +186,29 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .hero-title {
-    font-size: 50px;
+
+    font-size: 46px;
     font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+
+    margin-top: 30px;
 }
 
 .hero-cta {
-    margin-top: 30px;
-    
+
+    margin-top: 30px;   
 }
 
 .hero-button {
     margin: 0 5px;
-    width: 140px;
-    height: 40px;
+    transition: 0.2s ease-in-out;
     &:first-child {
         a {
             color: $text-color-secondary;
@@ -169,11 +228,56 @@
     &:nth-child(2) {
         background-color: $primary-color;
         border-radius: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         a {
             color: $text-color-primary;
         }
         &:hover {
             background-color: $secondary-color;
         }
+    }
+}
+
+.hero-button-2 {
+
+        width: 160px;
+        height: 40px;
+        background-color: $white-color;
+        border-radius: 50px;
+        transition: 0.2s ease-in-out;
+        a {
+            color: $text-color-secondary;
+        }
+        &:hover {
+            background-color: $white-color;
+            opacity: 0.7;
+        }
+}
+
+.hero-description-3 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-flow: column wrap;
+    .hero-title {
+        text-transform: unset;
+    }
+}
+
+#img1 { 
+    display: none;
+    @media screen and(min-width: 426px){
+        display: block;
+    }
+}
+#img2 { 
+    display: block;
+    height: 500px;
+    @media screen and(min-width: 426px){
+        display: none;
     }
 }
