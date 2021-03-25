@@ -1,4 +1,27 @@
 // NAVBAR
+.nav_left-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+.nav_right-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav_right_icon-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
 
 //Logo
 .nav_logo_img {
@@ -9,3 +32,4 @@
 .menu_link {
     color: #000;
 }
+
