@@ -5,7 +5,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import Img1 from '../../assets/images/hero-images/1.webp';
 import Img1_mobile from '../../assets/images/hero-images/1-mobile.webp';
 import Img2 from '../../assets/images/hero-images/2.webp';
+import Img2_mobile from '../../assets/images/hero-images/2-mobile.webp';
 import Img3 from '../../assets/images/hero-images/3.webp';
+import Img3_mobile from '../../assets/images/hero-images/3-mobile.webp';
 
 const Hero = () => {
   const settings = {
@@ -34,7 +36,7 @@ const Hero = () => {
     customPaging: () => (
       <div
         style={{
-          width: '300px',
+          width: '200px',
           height: '23px',
         }}
       ></div>
@@ -66,7 +68,8 @@ const Hero = () => {
         </div>
         <div className="slider__box">
           <div className="hero-image">
-            <img src={Img2} alt="img1" />
+            <img src={Img2_mobile} alt="img1" id="img2" />
+            <img src={Img2} alt="img1" id="img1" />
           </div>
           <div className="hero-description">
             <h1 className="hero-title primary-text">Precomanda neo</h1>
@@ -82,7 +85,8 @@ const Hero = () => {
         </div>
         <div className="slider__box">
           <div className="hero-image">
-            <img src={Img3} alt="img1" />
+            <img src={Img3_mobile} alt="img2" id="img2" />
+            <img src={Img3} alt="img1" id="img1" />
           </div>
           <div className="hero-description-3 flex-center">
             <h1 className="hero-title secondary-text">QuickDrive™</h1>

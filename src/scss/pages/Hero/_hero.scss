@@ -12,52 +12,59 @@
        li {
           display: flex;
           justify-content: space-around;
-          width: 200px;
-          height: 2.5px;
+          width: 10px;
+          height: 10px;
           background-color: #c9c9c9;
           border-radius: 6px;
           position: relative;
-          &:first-child:hover {
-             &::after {
-                 content: "Galaxy S21 ultra 5g";
-                 display: block;
-                 font-weight: 600;
-                 text-transform: uppercase;
-                 position: absolute;
-                 top: -30px;
-                 left: 0;
-                 right: 0;
-                 margin: 0 auto;
-                 color: $text-color-secondary;
-             }
+          @media screen and(min-width: 768px) {
+
+            width: 200px;
+            height: 2.5px;
+
+            &:first-child:hover {
+                &::after {
+                    content: "Galaxy S21 ultra 5g";
+                    display: block;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                }
+            }
+            &:nth-child(2):hover {
+                &::after {
+                    content: "Precomanda neo qled";
+                    display: block;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                }
+            }
+            &:nth-child(3):hover {
+                &::after {
+                    content: "QuickDrive";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                }
+            }
           }
-          &:nth-child(2):hover {
-             &::after {
-                 content: "Precomanda neo qled";
-                 display: block;
-                 font-weight: 600;
-                 text-transform: uppercase;
-                 position: absolute;
-                 top: -30px;
-                 left: 0;
-                 right: 0;
-                 margin: 0 auto;
-                 color: $text-color-secondary;
-             }
-          }
-          &:nth-child(3):hover {
-             &::after {
-                 content: "QuickDrive";
-                 display: block;
-                 font-weight: 600;
-                 position: absolute;
-                 top: -30px;
-                 left: 0;
-                 right: 0;
-                 margin: 0 auto;
-                 color: $text-color-secondary;
-             }
-          }
+          
        }
     }
 }
@@ -182,34 +189,83 @@
 }
 
 .hero-description {
-
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 80px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 0 auto;
+
+    @media screen and(min-width: 425px) {
+        top: 25%;
+        left: 20px;
+        right: unset;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: unset;
+        align-items: unset;
+
+    }
+
+    @media screen and(min-width: 1024px){
+        top: 40%;
+        left: 60px;
+    }
+    @media screen and(min-width: 1024px){
+        top: 50%;
+        left: 80px;
+    }
 }
 
 .hero-title {
 
-    font-size: 46px;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 30px;
+    @media screen and(min-width: 768px){
+        
+        font-size: 38px;
+        
+    }
+    @media screen and(min-width: 1440px){
+        
+        font-size: 46px;
+        
+    }
 }
 
 .hero-subtitle {
 
-    margin-top: 30px;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
 }
 
 .hero-cta {
 
-    margin-top: 30px;   
+    // margin-top: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    
+    @media screen and(min-width: 768px){
+        
+        flex-flow: row wrap;
+    }
 }
 
 .hero-button {
-    margin: 0 5px;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
     transition: 0.2s ease-in-out;
+    
     &:first-child {
+        width: 160px;
+        height: 40px;
         a {
             color: $text-color-secondary;
             position: relative;
@@ -228,10 +284,12 @@
     &:nth-child(2) {
         background-color: $primary-color;
         border-radius: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        // padding-left: 10px;
+        // padding-right: 10px;
+        // padding-top: 10px;
+        // padding-bottom: 10px;
+        width: 160px;
+        height: 40px;
         a {
             color: $text-color-primary;
         }
@@ -248,6 +306,7 @@
         background-color: $white-color;
         border-radius: 50px;
         transition: 0.2s ease-in-out;
+        margin-top: 10px;
         a {
             color: $text-color-secondary;
         }
@@ -266,12 +325,27 @@
     .hero-title {
         text-transform: unset;
     }
+    @media screen and(min-width: 426px){
+        top: 20px;
+    }
+    @media screen and(min-width: 1024px){
+        top: 50px;
+    }
+    @media screen and(min-width: 1440px){
+        top: 80px;
+    }
 }
 
 #img1 { 
     display: none;
     @media screen and(min-width: 426px){
         display: block;
+        height: 450px;
+        object-fit: cover;
+    }
+    @media screen and(min-width: 1000px){
+        display: block;
+        height: 100%;
     }
 }
 #img2 { 
