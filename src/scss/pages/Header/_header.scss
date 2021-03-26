@@ -1,47 +1,136 @@
-// NAVBAR
+
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+// Nav left
+
 .nav_left-menu{
-    list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 100px;
-
 }
 
-.nav_right-menu{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.submenu {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $background-color;
+    z-index: 9999;
+    height: 0vh;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
 }
 
-.nav_right_icon-menu{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.menu-item:hover {
+    .submenu {
+        height: 88.8vh;
+    }
+}
+
+.submenu-title {
+    width: 180px;
+    border-bottom: 2px solid $primary-color;
+}
+
+.submenu-items {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 20px;
+    width: 250px;
+    cursor: pointer;
+    position: relative;
+    background-color: $background-color;
+}
+
+.submenu-items-list {
+    position: absolute;
+    left: 250px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-100px);
+    opacity: 0;
+    background-color: none;
+    li {
+        margin: 20px 0;
+        width: 0;
+    }
+}
+
+.submenu-items:hover .submenu-items-list {
+    transform: translateX(0px);
+    opacity: 1;
+    li {
+        width: 200px;
+    }
+}
+ 
+.list-1 {
+    top: -20px;
+}
+
+.list-2 {
+    top: -70px;
+}
+
+.list-3 {
+    top: -120px;
+}
+
+.list-4 {
+    top: -170px;
+}
+
+.list-5 {
+    top: -220px;
+}
+
+.list-6 {
+    top: -270px;
+}
+
+.list-7 {
+    top: -320px;
 }
 
 //Logo
+
 .nav_logo_img {
     width:  100px;
-    height: 100px;
 }
 
 .menu_link {
     color: #000;
     font-size: 14px;
     font-weight: bolder;
-    padding: 0 13px;
+    padding: 8px 10px;
+    &:hover {
+        color: $text-color-primary;
+        border-radius: 50px;
+        background-color: $primary-color;
+    }
 }
 
-.menu_link:hover{
-    border: 1px solid #000;
-    background-color: #000;
-    color: #fff;
-    border-width: 1px;
-    border-radius: 16px;
-    padding: 7px 11px;
-    margin: 3px 2px;
+// Nav right
 
+.nav_right-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .menu-icon:last-child .menu-icons {
+       margin-right: 0;
+    }
+}
+
+.menu-icons {
+    margin: 0 10px;
+    svg {
+        height: 23px;
+    }
 }
