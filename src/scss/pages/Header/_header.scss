@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
- 
+    margin-right: 100px;
+
 }
 
 .nav_right-menu{
@@ -12,7 +13,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .nav_right_icon-menu{
@@ -20,7 +20,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
- 
 }
 
 //Logo
@@ -31,5 +30,18 @@
 
 .menu_link {
     color: #000;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 0 13px;
 }
 
+.menu_link:hover{
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    border-width: 1px;
+    border-radius: 16px;
+    padding: 7px 11px;
+    margin: 3px 2px;
+
+}
