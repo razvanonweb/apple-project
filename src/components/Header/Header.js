@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Cart, Account,} from './Icons/Icons';
+import { Search, Cart, Account, Next} from './Icons/Icons';
 import Samsung_logo from '../../assets/logo/global-samsung-logo.svg';
 
 const Header = () => {
@@ -7,6 +7,7 @@ const Header = () => {
     <div className="navbar">
       <div className="container-xl p-1">
         <div className="nav_logo col-2">
+          <i class="bi bi-chevron-right"></i>
           <a href="/" className="nav_logo_link">
             <img src={Samsung_logo} alt="" className="nav_logo_img" />
           </a>
