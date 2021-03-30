@@ -67,7 +67,7 @@ const OfferDevices = () => {
           <img src={Img1} alt="img" />
         </div>
         <div className="offerdevices__box">
-          <img src={Img1} alt="img" />
+          <img src={Img2} alt="img" />
         </div>
       </Slider>
     </div>
