@@ -16,7 +16,7 @@ const Header = () => {
         <ul className="nav__left-menu col-6">
           <li className="menu-item">
             <a href="#" className="menu-item__link">
-              <li class="submenu-link__title">Galaxy 5G</li>
+              Galaxy 5G
             </a>
           </li>
           <li className="menu-item">

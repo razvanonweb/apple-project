@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
 import OfferDevices from '../components/OfferDevices/OfferDevices';
+import Footer from "../components/Footer/Footer";
 import '../css/App.min.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <OfferDevices />
+      <Footer />
     </div>
   );
 }
