@@ -45,19 +45,17 @@
     bottom: unset;
     .slick-active {
     background-color: $primary-color;
-       }
-       li {
-         display: flex;
-     justify-content: space-around;
-     width: 10px;
-         height: 10px;
-          border-radius: 6px;
-          position: relative;
-          @media screen and(min-width: 768px) {
-
-            width: 260px;
+    }
+        li {
+        display: flex;
+        justify-content: space-around;
+        width: 10px;
+        height: 10px;
+        border-radius: 6px;
+        position: relative;
+        @media screen and(min-width: 768px) {
+            width: 460px;
             height: 2.5px;
-
             &:first-child {
                 &::after {
                     content: "Reluare cu Galaxy Unpacked";
@@ -88,7 +86,7 @@
                     z-index: -1;
                 }
             }
-            &:nth-child(3){
+            &:nth-child(3) {
                 &::after {
                     content: "Galaxy A52";
                     display: block;
@@ -103,9 +101,9 @@
                 }
 
             }
-            &:nth-child(4){
+            &:nth-child(4) {
                 &::after {
-                    content: "Galaxy A72";
+                    content: "altceva";
                     display: block;
                     font-weight: 600;
                     position: absolute;
@@ -116,23 +114,22 @@
                     color: $text-color-secondary;
                     z-index: -1;
                 }
-          }
-          &:nth-child(5){
-            &::after {
-                content: " Galaxy Buds Pro";
-                display: block;
-                font-weight: 600;
-                position: absolute;
-                top: -30px;
-                left: 0;
-                right: 0;
-                margin: 0 auto;
-                color: $text-color-secondary;
-                z-index: -1;
             }
-          
-       }
+            &:last-child {
+                &::after {
+                    content: "ceva";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+        }
     }
 }
-    
-
+}
+}
