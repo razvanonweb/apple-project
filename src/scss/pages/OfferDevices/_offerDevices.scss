@@ -101,10 +101,38 @@
                     color: $text-color-secondary;
                     z-index: -1;
                 }
+
             }
+            &:nth-child(4){
+                &::after {
+                    content: "Galaxy A72";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
           }
+          &:nth-child(5){
+            &::after {
+                content: " Galaxy Buds Pro";
+                display: block;
+                font-weight: 600;
+                position: absolute;
+                top: -30px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                color: $text-color-secondary;
+                z-index: -1;
+            }
           
        }
     }
 }
+    
 
