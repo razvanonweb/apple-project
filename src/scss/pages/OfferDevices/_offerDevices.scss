@@ -40,8 +40,9 @@
 
 .offerdevices__slider {
     .slick-dots{
-    top: -10px;
-    z-index: -1;
+    top: 10px;
+    z-index: 9999;
+    bottom: unset;
     .slick-active {
     background-color: $primary-color;
        }

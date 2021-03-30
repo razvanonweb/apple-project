@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Facebook from "../../assets/logo/facebook-logo.svg";
 import Twitter from "../../assets/logo/twitter-logo-fill.svg";
 import Instagram from "../../assets/logo/instagram-logo-thin.svg";
@@ -6,13 +6,16 @@ import Youtube from "../../assets/logo/youtube-logo-fill.svg";
 import Linkedin from "../../assets/logo/linkedin-logo-fill.svg";
 
 const Footer = () => {
+    const [footerList, setFooterList] = useState(false);
+    const handleFooterList = () => setFooterList(!footerList);
+    console.log(footerList)
     return (
         <div className="footer">
             <div className="container-xl">
-                <div className="row footer-menu">
-                    <div className="footer-col col">
-                        <p className="footer-title">Produse și Servicii</p>
-                        <ul className="footer-list">
+                <div className="row p-0 footer-menu">
+                    <div className="footer-col col-md p-0">
+                        <p onClick={() => handleFooterList()} className="footer-title">Produse și Servicii</p>
+                        <ul className={footerList ? "footer-list footer-active-list" : "footer-list"}>
                             <li className="footer-item"><a href="#" className="footer-item__link">Telefoane</a></li>
                             <li className="footer-item"><a href="#" className="footer-item__link">Tablete</a></li>
                             <li className="footer-item"><a href="#" className="footer-item__link">Casti</a></li>
@@ -29,7 +32,7 @@ const Footer = () => {
                             <li className="footer-item"><a href="#" className="footer-item__link">Memorie și stocare</a></li>
                         </ul>
                     </div>
-                    <div className="footer-col col">
+                    <div className="footer-col col-md p-0">
                         <p className="footer-title">Magazin Online</p>
                         <ul className="footer-list">
                             <li className="footer-item"><a href="#" className="footer-item__link">Oferte</a></li>
@@ -39,7 +42,7 @@ const Footer = () => {
                             <li className="footer-item"><a href="#" className="footer-item__link">ANPC ↗</a></li>
                         </ul>
                     </div>
-                    <div className="footer-col col">
+                    <div className="footer-col col-md p-0">
                         <p className="footer-title">Suport Clienți</p>
                         <ul className="footer-list">
                             <li className="footer-item"><a href="#" className="footer-item__link">Contact</a></li>
@@ -48,7 +51,7 @@ const Footer = () => {
                             <li className="footer-item"><a href="#" className="footer-item__link">Informatii Service</a></li>
                         </ul>
                     </div>
-                    <div className="footer-col col">
+                    <div className="footer-col col-md p-0">
                         <p className="footer-title">Cont {'&'} Comunitate</p>
                         <ul className="footer-list">
                             <li className="footer-item"><a href="#" className="footer-item__link">Contul meu</a></li>
@@ -61,7 +64,7 @@ const Footer = () => {
                             <li className="footer-item"><a href="#" className="footer-item__link">Comunitate</a></li>
                         </ul>
                     </div>
-                    <div className="footer-col col">
+                    <div className="footer-col col-md p-0">
                         <p className="footer-title">Compania</p>
                         <ul className="footer-list">
                             <li className="footer-item"><a href="#" className="footer-item__link">Despre noi</a></li>
@@ -106,7 +109,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-extraspace"></div>
             </div>
-        </div>
+        </div >
     )
 }
 
