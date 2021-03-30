@@ -40,16 +40,16 @@
 
 .offerdevices__slider {
     .slick-dots{
-       top: -10px;
-       z-index: -1;
+    top: -10px;
+    z-index: -1;
     .slick-active {
-           background-color: $primary-color;
+    background-color: $primary-color;
        }
        li {
-          display: flex;
-          justify-content: space-around;
-          width: 10px;
-          height: 10px;
+         display: flex;
+     justify-content: space-around;
+     width: 10px;
+         height: 10px;
           border-radius: 6px;
           position: relative;
           @media screen and(min-width: 768px) {
