@@ -85,7 +85,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-final-row row">
-                    <div className="col">
+                    <div className="col-9">
                         <ul className="footer-final-list d-flex">
                             <li className="footer-final-item"><a href="" className="footer-final-link">România/Română</a></li>
                             <li className="footer-final-item"><a href="" className="footer-final-link">Ajutor Pentru Accesibilitate</a></li>
@@ -96,7 +96,7 @@ const Footer = () => {
                             <li className="footer-final-item"><a href="" className="footer-final-link">Harta Site</a></li>
                         </ul>
                     </div>
-                    <div className="col col-lg-3">
+                    <div className="col-3">
                         <ul className="footer-icons-list">
                             <li className="footer-icons-item"><p className="footer-final-text">Rămâi alături de noi?</p></li>
                             <li className="footer-icons-item"><a href="" className="footer-icons-link"><img className="footer-icon" src={Facebook} alt="" /></a></li>

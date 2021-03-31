@@ -5,20 +5,20 @@
     margin-bottom: -6px;
 
     .slick-dots{
-       bottom: 25px;
+bottom: 25px;
     .slick-active {
-           background-color: $primary-color;
-           z-index: 100;
-       }
-       li {
-          display: flex;
-          justify-content: space-around;
-          width: 10px;
-          height: 10px;
-          background-color: #c9c9c9;
-          border-radius: 6px;
-          position: relative;
-          @media screen and(min-width: 768px) {
+        background-color: $primary-color;
+        z-index: 100;
+    }
+    li {
+display: flex;
+justify-content: space-around;
+width: 10px;
+height: 10px;
+background-color: #c9c9c9;
+border-radius: 6px;
+position: relative;
+@media screen and(min-width: 768px) {
 
             width: 200px;
             height: 2.5px;
@@ -64,9 +64,9 @@
                     color: $text-color-secondary;
                 }
             }
-          }
-          
-       }
+}
+
+}
     }
 }
 
@@ -182,7 +182,7 @@
         border-radius: 5px;
         margin-left: 20px;
 
-         @media screen and(min-width: 1024px) {
+    @media screen and(min-width: 1024px) {
 
             display: flex;
         }

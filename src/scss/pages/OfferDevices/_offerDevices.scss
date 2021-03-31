@@ -2,7 +2,7 @@
     text-align: center;
     margin-bottom: 60px;
     margin-top: 30px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .offer-list{
@@ -24,6 +24,30 @@
         height: 400px;
         margin: 0 auto;
     }
+}
+
+.offerdevices-img{
+    height: 850px;
+    width: 750px;
+
+}
+
+.offerdevices-img3{
+height: 100%;
+width: 100%;
+}
+
+.offerdevices-img2{
+    height: 100%;
+    width: 100%;
+}
+
+.img-pap{
+    flex-direction: row;
+}
+
+.img-big{
+    flex-direction: row;
 }
 
 .offerDevices-list {
@@ -61,7 +85,6 @@
                     content: "Reluare cu Galaxy Unpacked";
                     display: block;
                     font-weight: 600;
-                    text-transform: uppercase;
                     position: absolute;
                     top: -30px;
                     left: 0;
@@ -76,7 +99,6 @@
                     content: "Galaxy S21 | S21+ 5G";
                     display: block;
                     font-weight: 600;
-                    text-transform: uppercase;
                     position: absolute;
                     top: -30px;
                     left: 0;
@@ -103,7 +125,7 @@
             }
             &:nth-child(4) {
                 &::after {
-                    content: "altceva";
+                    content: "Galaxy A72";
                     display: block;
                     font-weight: 600;
                     position: absolute;
@@ -115,9 +137,9 @@
                     z-index: -1;
                 }
             }
-            &:last-child {
+            &:nth-child(5) {
                 &::after {
-                    content: "ceva";
+                    content: "Galaxy Buds Pro";
                     display: block;
                     font-weight: 600;
                     position: absolute;
@@ -129,6 +151,197 @@
                     z-index: -1;
                 }
         }
+        
+    }
+}
+}
+}
+
+.offerdevices__slider2{
+    .slick-dots{
+    top: 10px;
+    z-index: 9999;
+    bottom: unset;
+    .slick-active {
+    background-color: $primary-color;
+    }
+        li {
+        display: flex;
+        justify-content: space-around;
+        width: 10px;
+        height: 10px;
+        border-radius: 6px;
+        position: relative;
+        @media screen and(min-width: 768px) {
+            width: 460px;
+            height: 2.5px;
+            &:first-child {
+                &::after {
+                    content: "The First Look 2021";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+            }
+            &:nth-child(2) {
+                &::after {
+                    content: "Neo QLED";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+            }
+            &:nth-child(3) {
+                &::after {
+                    content: "The Frame 2020";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+
+            }
+            &:nth-child(4) {
+                &::after {
+                    content: "The Serif 2020";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+            }
+            &:nth-child(5) {
+                &::after {
+                    content: "Crystal UHD TV";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+        }
+        
+    }
+}
+}
+}
+
+.offerdevices__slider3{
+    .slick-dots{
+    top: 10px;
+    z-index: 9999;
+    bottom: unset;
+    .slick-active {
+    background-color: $primary-color;
+    }
+        li {
+        display: flex;
+        justify-content: space-around;
+        width: 10px;
+        height: 10px;
+        border-radius: 6px;
+        position: relative;
+        @media screen and(min-width: 768px) {
+            width: 460px;
+            height: 2.5px;
+            &:first-child {
+                &::after {
+                    content: "Aparate frigorifice";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+            }
+            &:nth-child(2) {
+                &::after {
+                    content: "QuickDrive™";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+            }
+            &:nth-child(3) {
+                &::after {
+                    content: "Cuptor Dual Cook Flex™";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+
+            }
+            &:nth-child(4) {
+                &::after {
+                    content: "Samsung Jet™";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+            }
+            &:nth-child(5) {
+                &::after {
+                    content: "Purificatoare de aer";
+                    display: block;
+                    font-weight: 600;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: $text-color-secondary;
+                    z-index: -1;
+                }
+        }
+        
     }
 }
 }
