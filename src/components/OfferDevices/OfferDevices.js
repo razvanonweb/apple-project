@@ -44,11 +44,13 @@ const OfferDevices = () => {
             justifyContent: 'center',
             alignItems: 'center',
             position: 'relative',
+            width: '800px',
+            margin: '0 auto',
           }}
         >
           {dots}
         </ul>
-      </div>
+      </div >
     ),
     customPaging: () => (
       <div
